@@ -9,7 +9,7 @@ body {
 }
 
 .jumbotron {
-   background-image: url('../images/michael-payne-red-panda.jpg');
+   background-image: url('./images/michael-payne-red-panda.jpg');
    background-size: cover;
    background-position: 0% 50%;
    height: 300px;
