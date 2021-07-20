@@ -1,0 +1,19 @@
+body {
+   font-family: 'Open Sans', sans-serif;
+   background: linear-gradient(to right, #114428, #3c1053);
+ }
+ 
+ html, body {
+   height: 100%;
+}
+
+.jumbotron {
+   background-image: url('../images/michael-payne-red-panda.jpg');
+   background-size: cover;
+   background-position: 0% 50%;
+   height: 300px;
+}
+
+.mask {
+   background: rgba(0, 0, 0, .3);
+}

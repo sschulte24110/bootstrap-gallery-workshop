@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Curiosity Week</title>
+
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- bootstrap CSS import -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+   <!-- google font import for Open Sans -->
+   <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,700&display=swap" rel="stylesheet">
+
+   <!-- font-awesome import (content icons and social media)-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+   <!-- import our own custom css! -->
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+   <div class="container text-light">
+      <!-- step 1: navbar - basically pasted from bootstrap examples -->
+      <!-- https://getbootstrap.com/docs/5.0/components/navbar/ -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+         <div class="container-fluid">
+            <a class="logo" href="/"><img src="./images/logo.png" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+               aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#gallery">Kitties</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#about">About</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <section class="row row-cols-1 mb-2" id="home">
+         <div class="col">
+            <div class="jumbotron rounded overflow-hidden">
+               <div class="mask justify-content-center align-items-center d-flex h-100">
+                  <div>
+                     <h1 class="mb-3">Welcome!</h1>
+                     <h4>A gallery of images</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2" id="gallery">
+         <div class="col d-flex">
+            <div class="bg-light text-dark rounded overflow-hidden">
+               <img src="https://source.unsplash.com/800x600/?sunset" class="img-fluid" />
+               <h2 class="p-3 mb-0">Sunset</h2>
+               <p class="p-3">
+                  Sunsets are one of my favorite things to see in nature.
+            </div>
+            </p>
+         </div>
+         <div class="col d-flex">
+            <div class="bg-light text-dark rounded overflow-hidden">
+               <img src="https://source.unsplash.com/800x600/?sunrise" class="img-fluid" />
+               <h2 class="p-3 mb-0">Sunrise</h2>
+               <p class="p-3">
+                  Sunrises happen every day!
+            </div>
+            </p>
+         </div>
+         <div class="col d-flex">
+            <div class="bg-light text-dark rounded overflow-hidden">
+               <img src="https://source.unsplash.com/800x600/?bicycle" class="img-fluid" />
+               <h2 class="p-3 mb-0">Bicycles</h2>
+               <p class="p-3">
+                  Bikes Rock
+            </div>
+            </p>
+         </div>
+         <div class="col d-flex">
+            <div class="bg-light text-dark rounded overflow-hidden">
+               <img src="https://source.unsplash.com/800x600/?sourdough" class="img-fluid" />
+               <h2 class="p-3 mb-0">Sourdough</h2>
+               <p class="p-3">
+                  Sourdough bread is fun to bake
+            </div>
+            </p>
+         </div>
+         <div class="col d-flex">
+            <div class="bg-light text-dark rounded overflow-hidden">
+               <img src="https://source.unsplash.com/800x600/?kitties" class="img-fluid" />
+               <h2 class="p-3 mb-0">Kittens</h2>
+               <p class="p-3">
+                  Kittens are fun to play with!
+            </div>
+            </p>
+         </div>
+         <div class="col d-flex">
+            <div class="bg-light text-dark rounded overflow-hidden">
+               <img src="https://source.unsplash.com/800x600/?javascript" class="img-fluid" />
+               <h2 class="p-3 mb-0">Coding</h2>
+               <p class="p-3">
+                  Big fan of programming!
+            </div>
+            </p>
+         </div>
+         <div class="col d-flex">
+            <div class="bg-light text-dark rounded overflow-hidden">
+               <img src="https://source.unsplash.com/800x600/?snow" class="img-fluid" />
+               <h2 class="p-3 mb-0">Snow</h2>
+               <p class="p-3">
+                  Winter isn't so bad!
+            </div>
+            </p>
+         </div>
+         <div class="col d-flex">
+            <div class="bg-light text-dark rounded overflow-hidden">
+               <img src="https://source.unsplash.com/800x600/?northdakota" class="img-fluid" />
+               <h2 class="p-3 mb-0">North Dakota</h2>
+               <p class="p-3">
+                  North Dakota is Best Dakota!
+            </div>
+            </p>
+         </div>
+
+      </div>
+
+      <!-- About Section -->
+      <hr/>
+      <div class="row" id="about">
+         <div class="col-md-6">
+            <h2 class="text-center"><i class="fas fa-binoculars"></i> About</h2>
+            <p class="text-center">This is a fun little demo to show off some of the features of Bootstrap 5</p>
+         </div>
+         <div class="col-md-6">
+            <h2 class="text-center"><i class="fas fa-star"></i> Why</h2>
+            <p class="text-center">This project was put together for an EDA workshop!</p>
+         </div>
+      </div>
+
+
+      <!-- step 2: footer -->
+      <footer>
+         <div class="row">
+            <div class="col text-center">
+               &copy; 2021 KittyGram
+            </div>
+         </div>
+      </footer>
+
+   </div> <!-- /container -->
+   <!-- bootstrap js bundle (for modals etc) -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
