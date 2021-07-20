@@ -1,6 +1,7 @@
 body {
    font-family: 'Open Sans', sans-serif;
-   background: linear-gradient(to right, #114428, #3c1053);
+   background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #916e2d 100%);
+   background-attachment: fixed;
  }
  
  html, body {

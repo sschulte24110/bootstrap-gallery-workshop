@@ -12,7 +12,44 @@ finished project.
 We'll move pretty quickly but don't worry. You'll have access to the completed
 project and recorded video so you can review at your leisure. 
 
+## Resources
+   - [CSS Gradients](https://cssgradient.io/gradient-backgrounds/) (for generating background gradients!)
+   - [Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/) (for reference!)
+      - [Grid System](https://getbootstrap.com/docs/5.0/layout/grid/), [Containers](https://getbootstrap.com/docs/5.0/layout/containers/), [Breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/), Gutters
+      - [Flex Utilities](https://getbootstrap.com/docs/5.0/utilities/flex/)
+      - [Spacing](https://getbootstrap.com/docs/5.0/utilities/spacing/), [Position](https://getbootstrap.com/docs/5.0/utilities/position/), [Overflow](https://getbootstrap.com/docs/5.0/utilities/overflow/)
+      - [Typography](https://getbootstrap.com/docs/5.0/content/typography/), [Images](https://getbootstrap.com/docs/5.0/content/images/), [Buttons](https://getbootstrap.com/docs/5.0/components/buttons/), [Background](https://getbootstrap.com/docs/5.0/utilities/background/), [Borders](https://getbootstrap.com/docs/5.0/utilities/borders/), [Colors](https://getbootstrap.com/docs/5.0/utilities/colors/)
+      - [Nav Bar](https://getbootstrap.com/docs/5.0/components/navbar/)
+      - [Off Canvas Panels](https://getbootstrap.com/docs/5.0/components/offcanvas/)
+   - [Unsplash Source API](https://source.unsplash.com/) (for random stock art!)
+   - [Font Awesome](https://fontawesome.com/v5.15/icons?d=gallery&p=1&s=solid&m=free) (for icons!)
+   - [Google Fonts](https://fonts.google.com/) (for sweet fonts!)
+
+## Deployment
+
+### GitHub Pages
+
+You can deploy directly to GitHub Pages, simply by pushing to a GitHub Repo (or
+forking it into your personal GitHub account), navigating to the Settings, and
+turning on GitHub Pages for the main branch. [More Info](https://pages.github.com/)
+
+### Netlify
+
+Netlify is a free static site hosting platform. Simply sign up for free, connect
+to your GitHub account, and link with the repository that this project is stored
+into. Netlifly will handle the rest. [More Info](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
+
+
 ## Core Concepts
+
+### Setup
+
+This is a plain html/css project. Simply open `index.html` in your browser and
+off you go. You can also use a plugin for VS Code (or Atom) like 'Live Server'
+that can serve the html/css out through a web server.
+
+The `solution` branch has the fully working and complete project. The `content/`
+folder has checkpoints you can copy and paste as you follow along.
 
 ### Intro
 Bootstrap is a frontend CSS framework created by Twitter that provides a ton of 
@@ -28,7 +65,7 @@ unless otherwise specified, all styles by default are applied to screens at the
 "extra-small" size and larger. To override behavior for larger screensizes 
 (small, medium, large, extra-large), you have to explicitly specify it.
 
-At a high level, there's two major "domains" that you can use bootstrap for, and
+At a high level, there's a few major "domains" that you can use bootstrap for, and
 its up to you on how far you want to take it. The first is the responsive grid, 
 and the second are component utilities like vertical and horizonal alignment,
 navbar, form controls (buttons, inputs, drop-downs, etc), alerts, modals, icons,
@@ -62,6 +99,10 @@ To specify how wide a column should be, use the class `col-X` where X is how man
 columns to take up at all screen sizes. So `col-6` would be an element that takes up
 6 columns.
 
+To let Bootstrap figure out how wide the columns should be (automatically calculate),
+juse use the `col` class. There are additional utility classes that help specify
+how the automatic columns can be drawn.
+
 The structure of a bootstrap layout requires the entire layout to have a class of
 either `container` or `container-fluid`. Each block of column-based content needs
 to be inside a parent that has the `row` class. You can have any number of rows, 
@@ -83,7 +124,7 @@ its own virtual grid of 12 columns too).
 In addition, almost every bootstrap class has the ability to specify what screen
 sizes you want the class to be active for. By default all classes are implied to
 be active for "extra-small" screens and above. If you specify a different screen
-size (small, medium, large, extra-large: `sm`, `md`, `lg`, `xl`), Bootstrap will 
+size (small, medium, large, extra-large: `sm`, `md`, `lg`, `xl`, `xxl`), Bootstrap will 
 apply that rule only for that screen size *and larger* only.
 
 For example: 
@@ -109,9 +150,9 @@ the highest value. This applies the value to all 4 sides of the box model: top, 
 bottom, and left. 
 
 If you would like to specify adding padding to only one side of the box, you can specify
-that too with `mt, mr, mb, ml` and `pt, pr, pb, pl`: `mt-3` will apply margin level 3 to 
+that too with `mt, me, mb, ms` and `pt, pe, pb, ps`: `mt-3` will apply margin level 3 to 
 just the top. `pt-1 pb-5` will apply padding level 1 to the top, padding level 5 to the
-bottom.
+bottom. `ms` stands for `margin start (left)`, `me` stands for `margin end (right)` (new in BS 5).
 
 Just like with the grid system, it is implied that unless otherwise
 specified, padding/margin are applied at "extra-small screensizes and above" (so by 
@@ -134,10 +175,10 @@ Documentation for more info.
 ## More Info
 
 Read the Bootstrap Documentation, especially the section on the Grid and Components:
-  - https://getbootstrap.com/docs/4.3/
+  - https://getbootstrap.com/docs/5.0/
 
 More info on Bootstrap Starter Template:
-  - https://getbootstrap.com/docs/4.3/getting-started/introduction/
+  - https://getbootstrap.com/docs/5.0/getting-started/introduction/
 
 More info on Font-Awesome and Bootstrap:
   - https://www.w3schools.com/bootstrap4/bootstrap_icons.asp

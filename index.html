@@ -16,15 +16,15 @@
    <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,700&display=swap" rel="stylesheet">
 
    <!-- font-awesome import (content icons and social media)-->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
    <!-- import our own custom css! -->
-   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-   <div class="container-fluid text-light">
+   <div class="container text-light">
       <!-- navbar - basically pasted from bootstrap examples -->
       <!-- https://getbootstrap.com/docs/5.0/components/navbar/ -->
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -160,7 +160,7 @@
       </footer>
 
       <!-- `About` sidebar, activated with data-bs-toggle in the nav link -->
-      <div class="offcanvas offcanvas-start bg-dark text-light" tabindex="-1" id="about" aria-labelledby="aboutLabel">
+      <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="about" aria-labelledby="aboutLabel">
          <div class="offcanvas-header">
            <h5 class="offcanvas-title text-center" id="aboutLabel"><i class="fas fa-info-circle"></i> About This Project</h5>
            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -171,8 +171,8 @@
 
             <p>This project was created as part of an Emerging Digital Academy workshop!</p>
 
-            <p>Learn more here here:</p>
-            <div class="d-flex justify-content-around">
+            <p>Learn more here:</p>
+            <div class="d-flex justify-content-evenly">
                <a class="btn btn-primary" href="https://github.com/emergingdigitalacademy"><i class="fab fa-github"></i> GitHub</a> 
                <a class="btn btn-primary" href="https://EmergingAcademy.org"><i class="fas fa-link"></i> EmergingAcademy.org</a>
             </div>
