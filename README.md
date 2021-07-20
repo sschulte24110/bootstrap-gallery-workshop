@@ -15,7 +15,7 @@ project and recorded video so you can review at your leisure.
 ## Resources
    - [CSS Gradients](https://cssgradient.io/gradient-backgrounds/) (for generating background gradients!)
    - [Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/) (for reference!)
-      - [Grid System](https://getbootstrap.com/docs/5.0/layout/grid/), [Containers](https://getbootstrap.com/docs/5.0/layout/containers/), [Breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/), Gutters
+      - [Grid System](https://getbootstrap.com/docs/5.0/layout/grid/), [Containers](https://getbootstrap.com/docs/5.0/layout/containers/), [Breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/), [Gutters](https://getbootstrap.com/docs/5.0/layout/gutters/)
       - [Flex Utilities](https://getbootstrap.com/docs/5.0/utilities/flex/)
       - [Spacing](https://getbootstrap.com/docs/5.0/utilities/spacing/), [Position](https://getbootstrap.com/docs/5.0/utilities/position/), [Overflow](https://getbootstrap.com/docs/5.0/utilities/overflow/)
       - [Typography](https://getbootstrap.com/docs/5.0/content/typography/), [Images](https://getbootstrap.com/docs/5.0/content/images/), [Buttons](https://getbootstrap.com/docs/5.0/components/buttons/), [Background](https://getbootstrap.com/docs/5.0/utilities/background/), [Borders](https://getbootstrap.com/docs/5.0/utilities/borders/), [Colors](https://getbootstrap.com/docs/5.0/utilities/colors/)
