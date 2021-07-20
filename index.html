@@ -24,8 +24,8 @@
 </head>
 
 <body>
-   <div class="container text-light">
-      <!-- step 1: navbar - basically pasted from bootstrap examples -->
+   <div class="container-fluid text-light">
+      <!-- navbar - basically pasted from bootstrap examples -->
       <!-- https://getbootstrap.com/docs/5.0/components/navbar/ -->
       <nav class="navbar navbar-expand-lg navbar-dark">
          <div class="container-fluid">
@@ -40,7 +40,7 @@
                      <a class="nav-link" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#gallery">Kitties</a>
+                     <a class="nav-link" href="#gallery">Gallery</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#about">About</a>
@@ -50,7 +50,8 @@
          </div>
       </nav>
 
-      <section class="row row-cols-1 mb-2" id="home">
+      <!-- jumbotron -->
+      <section class="row row-cols-1 mb-3" id="home">
          <div class="col">
             <div class="jumbotron rounded overflow-hidden">
                <div class="mask justify-content-center align-items-center d-flex h-100">
@@ -62,82 +63,95 @@
             </div>
          </div>
       </section>
+      
+      <!-- gallery of images -->
+      <!-- change rows-col-xx-yy to change the grid to yy columns for xx screen size (sm, md, lg, et) -->
+      <!-- change g-3 to change the 'gutter' size (g-1, g-2, g-3, g-4, g-5)-->
+      <section class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3" id="gallery">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2" id="gallery">
+         <!-- `col` makes the div a flexible column, d-flex turns on flexbox which by default makes the 
+         column take up as much horizontal width as possible. try `flex-fill` to force full width fill -->
          <div class="col d-flex">
             <div class="bg-light text-dark rounded overflow-hidden">
                <img src="https://source.unsplash.com/800x600/?sunset" class="img-fluid" />
-               <h2 class="p-3 mb-0">Sunset</h2>
-               <p class="p-3">
+               <h2 class="p-3 mb-0 pb-0">Sunset</h2>
+               <p class="p-3 mb-0">
                   Sunsets are one of my favorite things to see in nature.
+               </p>
             </div>
-            </p>
          </div>
+
          <div class="col d-flex">
             <div class="bg-light text-dark rounded overflow-hidden">
                <img src="https://source.unsplash.com/800x600/?sunrise" class="img-fluid" />
-               <h2 class="p-3 mb-0">Sunrise</h2>
-               <p class="p-3">
+               <h2 class="p-3 mb-0 pb-0">Sunrise</h2>
+               <p class="p-3 mb-0">
                   Sunrises happen every day!
+               </p>
             </div>
-            </p>
          </div>
+
          <div class="col d-flex">
             <div class="bg-light text-dark rounded overflow-hidden">
                <img src="https://source.unsplash.com/800x600/?bicycle" class="img-fluid" />
-               <h2 class="p-3 mb-0">Bicycles</h2>
-               <p class="p-3">
+               <h2 class="p-3 mb-0 pb-0">Bicycles</h2>
+               <p class="p-3 mb-0">
                   Bikes Rock
+               </p>
             </div>
-            </p>
          </div>
+
          <div class="col d-flex">
             <div class="bg-light text-dark rounded overflow-hidden">
                <img src="https://source.unsplash.com/800x600/?sourdough" class="img-fluid" />
-               <h2 class="p-3 mb-0">Sourdough</h2>
-               <p class="p-3">
+               <h2 class="p-3 mb-0 pb-0">Sourdough</h2>
+               <p class="p-3 mb-0">
                   Sourdough bread is fun to bake
+               </p>
             </div>
-            </p>
          </div>
+
          <div class="col d-flex">
             <div class="bg-light text-dark rounded overflow-hidden">
                <img src="https://source.unsplash.com/800x600/?kitties" class="img-fluid" />
-               <h2 class="p-3 mb-0">Kittens</h2>
-               <p class="p-3">
+               <h2 class="p-3 mb-0 pb-0">Kittens</h2>
+               <p class="p-3 mb-0">
                   Kittens are fun to play with!
+               </p>
             </div>
-            </p>
          </div>
+
          <div class="col d-flex">
             <div class="bg-light text-dark rounded overflow-hidden">
                <img src="https://source.unsplash.com/800x600/?javascript" class="img-fluid" />
-               <h2 class="p-3 mb-0">Coding</h2>
-               <p class="p-3">
+               <h2 class="p-3 mb-0 pb-0">Coding</h2>
+               <p class="p-3 mb-0">
                   Big fan of programming!
+               </p>
             </div>
-            </p>
          </div>
+
          <div class="col d-flex">
             <div class="bg-light text-dark rounded overflow-hidden">
                <img src="https://source.unsplash.com/800x600/?snow" class="img-fluid" />
-               <h2 class="p-3 mb-0">Snow</h2>
-               <p class="p-3">
+               <h2 class="p-3 mb-0 pb-0">Snow</h2>
+               <p class="p-3 mb-0">
                   Winter isn't so bad!
+               </p>
             </div>
-            </p>
          </div>
+
          <div class="col d-flex">
             <div class="bg-light text-dark rounded overflow-hidden">
                <img src="https://source.unsplash.com/800x600/?northdakota" class="img-fluid" />
-               <h2 class="p-3 mb-0">North Dakota</h2>
-               <p class="p-3">
+               <h2 class="p-3 mb-0 pb-0">North Dakota</h2>
+               <p class="p-3 mb-0">
                   North Dakota is Best Dakota!
+               </p>
             </div>
-            </p>
          </div>
 
-      </div>
+      </section>
 
       <!-- About Section -->
       <hr/>
@@ -153,8 +167,8 @@
       </div>
 
 
-      <!-- step 2: footer -->
-      <footer>
+      <!-- Footer -->
+      <footer class='p-3 border-top'>
          <div class="row">
             <div class="col text-center">
                &copy; 2021 KittyGram
