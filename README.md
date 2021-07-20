@@ -33,11 +33,15 @@ You can deploy directly to GitHub Pages, simply by pushing to a GitHub Repo (or
 forking it into your personal GitHub account), navigating to the Settings, and
 turning on GitHub Pages for the main branch. [More Info](https://pages.github.com/)
 
+Example: https://booherbg.github.io/bootstrap-gallery-workshop/
+
 ### Netlify
 
 Netlify is a free static site hosting platform. Simply sign up for free, connect
 to your GitHub account, and link with the repository that this project is stored
 into. Netlifly will handle the rest. [More Info](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
+
+Example: https://eda-bootstrap-workshop.netlify.app/
 
 
 ## Core Concepts

@@ -1,0 +1,32 @@
+      <!-- step 04: gallery of images -->
+      <!-- change rows-col-xx-yy to change the grid to yy columns for xx screen size (sm, md, lg, et) -->
+      <!-- change g-3 to change the 'gutter' size (g-1, g-2, g-3, g-4, g-5)-->
+      <section class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3" id="gallery">
+         <!-- 
+            `col` makes the div a flexible column, d-flex turns on flexbox which by default makes the 
+            column take up as much horizontal width as possible 
+
+            Copy and paste the whole div to create as many gallery items as you'd like. Just change
+            the image url, h2 title, and paragraph text
+         -->
+         <div class="col d-flex"> <!-- start image 1 -->
+            <div class="bg-light text-dark rounded overflow-hidden">
+               <img src="https://source.unsplash.com/800x600/?sunset" class="img-fluid" />
+               <h2 class="p-3 mb-0 pb-0">Sunset</h2>
+               <p class="p-3 mb-0">
+                  Sunsets are one of my favorite things to see in nature.
+               </p>
+            </div>
+         </div> <!-- end image 1 -->
+
+         <div class="col d-flex"> <!-- start image 2 -->
+            <div class="bg-light text-dark rounded overflow-hidden">
+               <img src="https://source.unsplash.com/800x600/?sunrise" class="img-fluid" />
+               <h2 class="p-3 mb-0 pb-0">Sunrise</h2>
+               <p class="p-3 mb-0">
+                  Sunrises are awesome.
+               </p>
+            </div>
+         </div> <!-- end image 2-->
+
+      </section> <!-- end gallery section -->
