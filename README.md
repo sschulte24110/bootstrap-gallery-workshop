@@ -48,6 +48,8 @@ Example: https://eda-bootstrap-workshop.netlify.app/
 
 ### Setup
 
+*This repository is available at the following URL: https://tinyurl.com/eda-bootstrap*
+
 This is a plain html/css project. Simply open `index.html` in your browser and
 off you go. You can also use a plugin for VS Code (or Atom) like 'Live Server'
 that can serve the html/css out through a web server.
