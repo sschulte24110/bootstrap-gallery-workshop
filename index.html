@@ -2,47 +2,135 @@
 <html>
 
 <head>
-   <title>Bootstrap Image Gallery</title>
+  <title>Bootstrap Image Gallery</title>
 
-   <!-- Required meta tags -->
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <!-- bootstrap CSS import -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- bootstrap CSS import -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-   <!-- google font import for Open Sans -->
-   <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,700&display=swap" rel="stylesheet">
+  <!-- google font import for Open Sans -->
+  <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,700&display=swap" rel="stylesheet">
 
-   <!-- font-awesome import (content icons and social media)-->
-   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- font-awesome import (content icons and social media)-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-   <!-- import our own custom css! -->
-   <link rel="stylesheet" href="./style.css">
+  <!-- import our own custom css! -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-   <!-- try `container` or `container-fluid` -->
-   <div class="container text-light">
+  <!-- try `container` or `container-fluid` -->
+  <div class="container text-light">
 
-      <!-- Step 01: navbar - basically pasted from bootstrap examples -->
+    <!-- Step 01: navbar - basically pasted from bootstrap examples -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="logo" href="/"><img src="./images/logo.png" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <!-- data-bs-toggle is a special attribute to activate the Bootstrap Offcanvas Sidebar (About Project) -->
+            <li class="nav-item" data-bs-toggle="offcanvas" href="#about" role="button"
+              aria-controls="offcanvasExample">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> <!-- end navbar -->
+    <!-- Step 02: jumbotron -->
+    <section class="mb-3" id="home">
+      <div class="jumbotron rounded overflow-hidden">
+        <div class="mask justify-content-center align-items-center d-flex h-100">
+          <div>
+            <h1 class="mb-3">Welcome!</h1>
+            <h4>A gallery of images</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Step 04: gallery of images -->
+    <section class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3" id="gallery">
+      <!-- 
+         `col` makes the div a flexible column, d-flex turns on flexbox which by default makes the 
+         column take up as much horizontal width as possible 
 
-      <!-- Step 02: jumbotron -->
+         Copy and paste the whole div to create as many gallery items as you'd like. Just change
+         the image url, h2 title, and paragraph text
+      -->
+      <div class="col d-flex"> <!-- start image 1 -->
+        <div class="bg-light text-dark rounded overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" />
+          <h2 class="p-3 mb-0 pb-0">Sunset</h2>
+          <p class="p-3 mb-0">
+            Sunsets are one of my favorite things to see in nature.
+          </p>
+        </div>
+      </div> <!-- end image 1 -->
 
-      <!-- Step 04: gallery of images -->
+      <div class="col d-flex"> <!-- start image 2 -->
+        <div class="bg-light text-dark rounded overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" />
+          <h2 class="p-3 mb-0 pb-0">Sunrise</h2>
+          <p class="p-3 mb-0">
+            Sunrises are awesome.
+          </p>
+        </div>
+      </div> <!-- end image 2-->
 
-      <!-- Step 03: Footer -->
+    </section> <!-- end gallery section -->
+    <!-- Step 03: Footer -->
+    <footer class='p-3 mt-3 border-top'>
+      <div class="row">
+        <div class="col text-center">
+          &copy; 2021 KittyGram
+        </div>
+      </div>
+    </footer>
+    <!-- Step 05: `About` sidebar, activated with data-bs-toggle in the nav link -->
+    <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="about" aria-labelledby="aboutLabel">
+      <div class="offcanvas-header">
+         <h5 class="offcanvas-title text-center" id="aboutLabel">
+            <i class="fas fa-info-circle"></i> 
+            About This Project
+         </h5>
+         <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+         <p>This is a fun little demo to show off some of the features of Bootstrap 5.</p>
 
-      <!-- Step 05: `About` sidebar, activated with data-bs-toggle in the nav link -->
+         <p>This project was created as part of an Emerging Digital Academy workshop!</p>
 
-   </div> <!-- /container -->
+         <p>Learn more here:</p>
+         <div class="d-flex justify-content-evenly">
+            <a class="btn btn-primary" href="https://github.com/emergingdigitalacademy"><i class="fab fa-github"></i>
+               GitHub</a>
+            <a class="btn btn-primary" href="https://EmergingAcademy.org"><i class="fas fa-link"></i>
+               EmergingAcademy.org</a>
+         </div>
+      </div>
+   </div> <!-- end About sidebar -->
+  </div> <!-- /container -->
 
-   <!-- bootstrap js bundle (for modals etc) -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
+  <!-- bootstrap js bundle (for modals etc) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 </body>
 
